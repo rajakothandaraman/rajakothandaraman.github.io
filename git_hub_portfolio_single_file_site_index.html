@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. K. Raja — Academic Portfolio</title>
+  <meta name="description" content="Academic portfolio of Dr. K. Raja — publications, patents, supervision, awards, and contact info."/>
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121824; --ink:#e7edf5; --muted:#98a3b3; --acc:#5dd1ff; --soft:#1a2232;
+      --ring: rgba(93, 209, 255, 0.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 800px at 10% -10%, #112, transparent),linear-gradient(180deg,#0b0f14, #0b0f14 60%, #0b1016);color:var(--ink);font:16px/1.6 system-ui,Segoe UI,Inter,Roboto,Arial}
+    a{color:var(--acc);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:auto;padding:28px}
+    header{display:grid;gap:18px;align-items:center;grid-template-columns:auto 1fr}
+    .avatar{width:92px;height:92px;border-radius:50%;background:linear-gradient(135deg,#203045,#0e141f);display:grid;place-items:center;box-shadow:0 0 0 4px #0f1520, 0 0 0 6px var(--ring)}
+    .avatar span{font-weight:800;font-size:28px;letter-spacing:1px}
+    h1{margin:0;font-size:28px;letter-spacing:.3px}
+    .kpis{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .chip{background:var(--soft);border:1px solid #1f2a3d;border-radius:999px;padding:6px 12px;color:var(--ink);font-size:13px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:920px){
+      .grid{grid-template-columns:2fr 1fr}
+    }
+    section{background:linear-gradient(180deg, var(--card), #0f1522); border:1px solid #1a2436; border-radius:18px; padding:18px 18px 14px; box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    section h2{margin:2px 0 10px;font-size:18px;letter-spacing:.2px}
+    .row{display:grid;gap:10px}
+    .list{display:grid;gap:8px;margin:8px 0 0;padding:0}
+    .list li{list-style:none;background:#0e1522;border:1px solid #1b2436;border-radius:12px;padding:10px}
+    .badge{display:inline-block;font-size:12px;color:#cfe9ff;background:#112033;border:1px solid #1e2a40;padding:2px 8px;border-radius:999px;margin-left:6px}
+    .idgrid{display:grid;grid-template-columns:1fr;gap:10px}
+    @media(min-width:580px){.idgrid{grid-template-columns:repeat(2,1fr)}}
+    .kv{display:flex;gap:10px;align-items:center;background:#0e1624;border:1px solid #203149;border-radius:12px;padding:10px}
+    .kv b{min-width:125px;font-size:13px;color:#c7d5e8}
+    .muted{color:var(--muted)}
+    footer{margin:24px 0 8px;color:#8fa0b6;font-size:13px;text-align:center}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,#1a2538,#121a2a);border:1px solid #1f2b40;border-radius:12px;padding:8px 12px;color:var(--ink)}
+    .btn svg{width:16px;height:16px}
+    .code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;background:#0c121c;border:1px dashed #203149;border-radius:10px;padding:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar" aria-hidden="true"><span>KR</span></div>
+      <div>
+        <h1>Dr. K. Raja<span class="badge">Professor • Chairperson, School of Computing</span></h1>
+        <div class="kpis">
+          <div class="chip">33+ years in Academia</div>
+          <div class="chip">61 Journal Papers</div>
+          <div class="chip">14 SCI / WoS</div>
+          <div class="chip">30 Scopus</div>
+          <div class="chip">Patents: Granted & Published</div>
+        </div>
+        <div class="btns">
+          <a class="btn" href="https://www.scopus.com/authid/detail.uri?authorId=57197443567" target="_blank" rel="noreferrer">
+            <!-- Scopus icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+            Scopus ID: 57197443567
+          </a>
+          <a class="btn" href="https://www.webofscience.com/wos/author/record/J-3832-2016" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/></svg>
+            WoS ID: J-3832-2016
+          </a>
+          <a class="btn" href="https://scholar.google.com/citations?user=iq6rwMYAAAAJ&hl=en" target="_blank" rel="noreferrer">
+            <!-- Scholar icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l9 6-9 6-9-6 9-6zm0 7.5l9 6-9 6-9-6 9-6z"/></svg>
+            Google Scholar
+          </a>
+          <a class="btn" href="https://orcid.org/0000-0003-1599-1284" target="_blank" rel="noreferrer">
+            <!-- ORCID icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9 7h2v10H9zM14.5 9a3.5 3.5 0 110 7 3.5 3.5 0 010-7z" fill="#0b0f14"/></svg>
+            ORCID: 0000-0003-1599-1284
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid" style="margin-top:18px">
+      <section>
+        <h2>Professional Summary</h2>
+        <p class="muted">Ph.D. in Computer Science & Engineering with three decades of experience spanning teaching, research, and institutional leadership. Former Principal for 10+ years in self-financing engineering colleges. Seasoned in AICTE/UGC approvals, NBA/NAAC accreditation, ISO 9001:2015 QMS, and large-scale academic operations. Research spans Knowledge-Based Systems, Artificial Intelligence, Cloud Security, IoT, and Deep Learning.</p>
+
+        <h2 style="margin-top:14px">IDs & Profiles</h2>
+        <div class="idgrid">
+          <div class="kv"><b>Scopus</b> <span>57197443567</span></div>
+          <div class="kv"><b>Web of Science</b> <span>J-3832-2016</span></div>
+          <div class="kv"><b>Google Scholar</b> <span><a href="https://scholar.google.com/citations?user=iq6rwMYAAAAJ&hl=en">View Profile</a></span></div>
+          <div class="kv"><b>ORCID</b> <span>0000-0003-1599-1284</span></div>
+        </div>
+
+        <h2 style="margin-top:14px">Contact</h2>
+        <ul class="list">
+          <li><b>Email:</b> drkrajamit@gmail.com</li>
+          <li><b>Phone:</b> +91-9444280137 / 7010607420</li>
+          <li><b>Location:</b> Chennai, India</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Quick Facts</h2>
+        <ul class="list">
+          <li><b>Teaching Experience:</b> 33+ years in CSE & IT</li>
+          <li><b>Leadership:</b> Principal & Professor (2012–2020)</li>
+          <li><b>Supervisor:</b> 7 Ph.D. awarded, 7 ongoing</li>
+          <li><b>Patents:</b> Granted & Published (Face Helmet, Mask; IDS; IoT Healthcare)</li>
+          <li><b>Projects:</b> Co-I, DIT CoE for Grid Computing (₹4.6 Cr)</li>
+        </ul>
+      </section>
+    </main>
+
+    <section style="margin-top:18px">
+      <h2>Education</h2>
+      <div class="row">
+        <div class="kv"><b>Ph.D. (CSE)</b> <span>Sathyabama University, 2006 — Knowledge-Based Systems (AI)</span></div>
+        <div class="kv"><b>M.E. (CSE)</b> <span>University of Madras, 2001 — First Class</span></div>
+        <div class="kv"><b>B.E. (CSE)</b> <span>Annamalai University, 1993 — First Class</span></div>
+        <div class="kv"><b>B.Sc. (Mathematics)</b> <span>University of Madras, 1989</span></div>
+      </div>
+      <h2 style="margin-top:14px">Additional Qualifications</h2>
+      <div class="row">
+        <div class="kv"><b>Ph.D. (Management)</b> <span>Periyar University, 2020 — Service Quality</span></div>
+        <div class="kv"><b>MLIS & BLIS</b> <span>Annamalai University (2011, 2010)</span></div>
+        <div class="kv"><b>M.Phil (HR)</b> <span>Annamalai University, 2008</span></div>
+        <div class="kv"><b>MBA (Systems & Training)</b> <span>Madurai Kamaraj University, 1997</span></div>
+        <div class="kv"><b>PGDPM</b> <span>Personnel Management, Annamalai University</span></div>
+      </div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Accreditation & Quality</h2>
+      <ul class="list">
+        <li><b>NBA:</b> Accreditation documentation, implementation, mock audits (St. Joseph's 2002; Sri Sairam 2006; MIT 2008; DACE 2018)</li>
+        <li><b>NAAC:</b> Peer Team Member</li>
+        <li><b>ISO 9001:2015 QMS:</b> Lead Auditor training (Bureau Veritas, May 2017)</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Awards (Selected)</h2>
+      <ul class="list">
+        <li>Best Teacher Award — Sri Sairam Engineering College (2004–2006)</li>
+        <li>Best Research Paper — ICCBSD (2011)</li>
+        <li>ASDF Best Academic Researcher (2012); Best Educationist (2012)</li>
+        <li>ISTE Best Chapter Chairman Award (2019)</li>
+        <li>Teaching Excellence — Lions Club (2022); Best HoD — Chennai Soft Tech (2022)</li>
+        <li>HoD of the Year — EduTech Power India Awards (2024)</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>MoUs & CSR</h2>
+      <ul class="list">
+        <li>Godrej–DISHA Skill Development Centre (DACE)</li>
+        <li>Hyundai Car Transmission (CSR); BMW Twin Turbo Engine (CSR)</li>
+        <li>University of Technology Petronas (Student Exchange 2018–19)</li>
+        <li>Ajman University (Internships, Joint Publications)</li>
+        <li>NSBL Elevators, Oragadam (Training)</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Projects & Supervision</h2>
+      <ul class="list">
+        <li>DIT CoE: Grid Computing Research — ₹4.60 Crore (Anna University, 2007–2012)</li>
+        <li>TNSCST, MHRD–UBA, SERB supports: IoT & DL seminars and initiatives</li>
+        <li>Ph.D. Supervision: 7 awarded; 7 ongoing (Recognized at KL, Bharathiar, Sathyabama, Anna, SRM IST)</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Patents & Copyrights (Highlights)</h2>
+      <ul class="list">
+        <li>AI Based Face Helmet — Granted (2023)</li>
+        <li>AI Based Face Mask — Granted (2023)</li>
+        <li>CRF-based Intrusion Detection (2022); Improved IDS (2022)</li>
+        <li>IoT Camera for Smart Healthcare — Published (2024)</li>
+        <li>Automatic Health Prediction using ML — Published (2020)</li>
+        <li>DBMS Lab, Faculty Advisory, Student Profile — Registered (2017–2019)</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Publications (Snapshot)</h2>
+      <ul class="list">
+        <li>61 International/National Journal Papers (14 SCI/WoS; 30 Scopus)</li>
+        <li>Recent: Soft Computing (2023); SN Computer Science (2024); Cybernetics & Systems (2025)</li>
+        <li>Domains: AI/ML for Healthcare, Cloud Security, Information Retrieval, NLP for Education</li>
+      </ul>
+      <p class="muted">Full lists available on <a href="https://scholar.google.com/citations?user=iq6rwMYAAAAJ&hl=en">Google Scholar</a> and Scopus/WoS profiles linked above.</p>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Professional Memberships</h2>
+      <ul class="list">
+        <li>ISTE — Indian Society for Technical Education</li>
+        <li>CSI — Computer Society of India</li>
+        <li>IEEE — (Publications indexed; membership optional to list)</li>
+      </ul>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>How to Use</h2>
+      <ol class="list" style="gap:12px">
+        <li>Replace text with your latest numbers as needed.</li>
+        <li>Optionally add a profile photo: replace the avatar circle with an <span class="code">&lt;img src="assets/me.jpg" class="avatar" /&gt;</span>.</li>
+        <li>To add sections (Books, Book Chapters, FDPs): duplicate a <span class="code">&lt;section&gt;...&lt;/section&gt;</span> block and edit.</li>
+      </ol>
+    </section>
+
+    <footer>
+      © <span id="year"></span> • Built with a single, fast HTML file • Last updated manually
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
